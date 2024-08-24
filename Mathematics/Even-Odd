@@ -12,7 +12,7 @@ int main() {
         number=num%10;
         num=num/10;
         if(number%2==0){
-            ce+=1;
+            ce+=1; 
         }
         
         else{
