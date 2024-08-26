@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A;
+    int B;
+    int sum=0;
+    cout<<"Enter 1st number"<<endl;
+    cin>>A;
+    cout<<"Enter 2nd number"<<endl;
+    cin>>B;
+    sum=A+B;
+    cout<<"Sum of A and B is : "<<sum;
+    return 0;
+}
