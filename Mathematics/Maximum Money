@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N;
+    int K;
+    cout<<"Enter number of houses : ";
+    cin>>N;
+    cout<<"Enter amount of money : ";
+    cin>>K;
+    int total;
+    if (N%2!=0){
+            total= ((N+1)/2)*K;
+        }
+    else{
+            total= (N/2)*K;
+        }
+    cout<<"Maximum Money : "<<total;
+    return 0;
+}
