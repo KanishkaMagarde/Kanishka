@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int A;
+    int B;
+    cout<<"Enter 1st number : ";
+    cin>>A;
+    cout<<"Enter 2nd number : ";
+    cin>>B;
+    cout<<"Before Swaping : "<<A<<", "<<B<<endl;
+    A=A+B;
+    B=A-B;
+    A=A-B;
+    cout<<"After Swaping : "<<A<<", "<<B;
+    return 0;
+}
