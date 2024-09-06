@@ -1,0 +1,13 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int K;
+    cin>>K;
+    int dub=K*2;
+    dub=dub+K;
+    dub=dub/2;
+    dub=dub-K;
+    cout<< dub;
+    return 0;
+}
