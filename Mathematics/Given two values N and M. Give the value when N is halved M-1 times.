@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N,M;
+    cin>>N;
+    cin>>M;
+    for (int i=1; i<=M-1; i++){
+        N/=2;
+    }
+    cout<< N;
+
+    return 0;
+}
