@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int N;
+    cin>>N;
+    string binary="";
+    while(N>=2){
+        binary += (char)('0'+ N%2);
+        N=N/2;
+    }
+    binary += (char)('0'+ N);
+    reverse(binary.begin(), binary.end());
+    cout<<binary<<"\n";
+    
+    string b = "";
+    
+    for(int i=0;i<binary.size();i++){
+        if(binary[i] == '0')
+            b = b+'1';
+        else
+            b = b+'0';
+    }
+    cout<<b;
+    
+    
+    return 0;
+}
