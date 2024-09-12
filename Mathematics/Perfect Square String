@@ -1,0 +1,20 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string S;
+    cin>>S;
+   int num;
+    int sum=0;
+    for (int i=0; i<S.size(); i++){
+        num=(int) S[i];
+        sum=sum+num;
+    }
+    int q=sqrt(sum);
+    if (q*q==sum){
+        cout<< 1;
+    }
+    else{
+        cout<< 0;
+    }
+}
