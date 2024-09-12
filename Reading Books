@@ -1,0 +1,18 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    array<int,3>arr1={3,4,5} ;
+    array<int,3>arr2={4,4,5} ;
+    int k=10;
+    int num;
+    int max=0;
+    for (int i=0; i<arr1.size(); i++){
+            num=k/arr1[i];
+            num=num*arr2[i];
+            if(num>max){
+            max=num;
+            }
+    }
+    cout<< max;
+}
