@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int a1, a2, n;
+    cin>>a1;
+    cin>>a2;
+    cin>>n;
+    int diff;
+        int c;
+        int a=a1;
+        int b=a2;
+        if(n==1){
+            return a;
+        }
+        if(n==2){
+            return b;
+        }
+        diff=a2-a1;
+        for(int i=3; i<=n; i++){
+            c=a2+diff;
+            a2=c;
+        }
+        cout<< c;
+}
