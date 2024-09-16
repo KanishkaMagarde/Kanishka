@@ -1,0 +1,16 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int N,X;
+    cin>>N;
+    cin>>X;
+    int a,b;
+        a=(N-1)*10;
+        b=X*(N-1);
+        int c=a-b;
+        if (c<0){
+            cout<<"Invalid";
+        }
+        cout<< c;
+}
