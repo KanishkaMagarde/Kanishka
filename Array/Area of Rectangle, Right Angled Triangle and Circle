@@ -1,0 +1,19 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    vector<int> ans;
+    int L,W,B,H,R;
+    cin>>L;
+    cin>>W;
+    cin>>B;
+    cin>>H;
+    cin>>R;
+    ans.push_back(L*W);
+    ans.push_back(B * H / 2);
+    ans.push_back(3.14*R*R);
+    for (double area : ans) {
+        cout << area << endl;
+    }
+    return 0;
+}
