@@ -1,0 +1,19 @@
+int f=0;
+        int num=N;
+        int fac=1;
+        int sum=0;
+        while(N){
+            f=N%10;
+            for (int i=1; i<=f; i++){
+                fac=fac*i;
+            }
+            sum=sum+fac;
+            N=N/10;
+            fac=1;  
+        }
+        if (sum==num){
+            return "YES";
+        }
+        else{
+            return "NO";
+        }
