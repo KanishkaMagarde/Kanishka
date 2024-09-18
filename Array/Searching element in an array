@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    array<int, 5> arr = {1, 2, 3, 4, 5};
+    int k;
+    cin >> k;
+    
+    bool found = false; // Flag to check if k is found
+    for (int i = 0; i < arr.size(); i++) {
+        if (k == arr[i]) {
+            cout << i + 1; // Print the 1-based index
+            found = true; // Set the flag to true
+            break; // Exit the loop since we've found k
+        }
+    }
+    
+    if (!found) {
+        cout << -1; // Print -1 if k is not found in the array
+    }
+    
+    return 0;
+}
